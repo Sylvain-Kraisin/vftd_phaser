@@ -1,0 +1,410 @@
+/* GENERAL */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-width:350px;
+	max-width:650px;
+	margin:auto;
+
+	font-family: Helvetica, sans-serif;
+	line-height: 1.5em;
+	padding:10px;
+	background: #E7E7E7;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAAmCAMAAADX/MRZAAAAG1BMVEXx8fHw8PDu7u7r6+vs7Ozv7+/t7e3p6enq6up7fRD2AAABM0lEQVR42u1WwXIFIQiLiKz//8XtrLbo9kFmz5WrDIHEKLijSA1Dpdwpzf6eXY+oJu07RPsVRpV2B34qo1mMbm2gi8bIXQeq1QTV2m9nmHNhzKXx6NZGgyu6o46SVuNhu8nImSlY5prEx+hOjzpyXwYJQwfqygf2uSapGfGy5FxVp7AZxTPnwQeCuZool70QYV2GD3zgI6ltJzXMaRZR7DJEOSCkZjdeNbvFTAaIvfAS8TP3l2uvXpp7iSNzf3ljEC/NvZQjc395Y6rY3kflXoqQub/6/rYiKc1lJ8KmjWHTtDDZH9ps/DFhZdce76y8a6PO33tTIyvNnlDEwvJPE0RTS/xWSuKdyrRH8i3yzysW1k0dRVaZy86EzTo729DZhs42dLahsw2dbehsQ2cb+t/b0Bc91VD1igpPDwAAAABJRU5ErkJggg==');
+}
+
+.nav, .content, .footer, #popup {
+
+}
+
+h1 {
+	padding-top: 10px;
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 1.2em;
+	border-left: 3px solid #3498db;
+	padding-left:10px;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p, ul, .onegame {
+	text-align: justify;
+	font-size:18px;
+}
+
+img {
+	display: block;
+	max-width:100%;
+	height:auto;
+	margin: 0 auto;
+}
+
+p, h2, h3, .cta, code {
+	margin: 10px 0;
+}
+
+a, a:visited {
+	color:#3498db;
+	font-size:18px;
+}
+
+a:hover {
+	color:#2980b9;
+}
+
+/* MAIN */
+
+.content {
+	border:3px solid #3498db;
+	border-top:none;
+	padding: 0 10px;
+	background: white;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin-bottom:10px;
+
+}
+
+.nav {
+	background: #3498db;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	text-align: right;
+	line-height: 50px;
+	padding: 0 10px;
+	margin-top:10px;
+}
+
+.nav a {
+	color:white;
+	text-decoration: none;
+	margin-left:15px;
+	text-transform: uppercase;
+	font-size: 14px;
+	display: inline-block;
+	height: 38px;
+    
+}
+
+.nav a:hover {
+	border-bottom: 2px solid white;
+}
+
+.nav a.logo {
+	font-size: 18px;
+	float:left;
+	margin-left:3px;
+	text-transform: none;
+}
+
+.nav a.logo:hover {
+	border:none;
+}
+
+.cta {
+	border:3px solid #95a5a6;
+	padding:10px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.cta p {
+	text-align: center;
+	margin:0;
+	font-weight: bold;
+}
+
+.cta p.small {
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+.footer {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.footer a {
+	margin-left:10px;
+}
+
+ul {
+	margin: 0;
+	list-style-type: none;
+	margin-left:10px;
+}
+
+ul > li {
+	text-indent: -10px;
+}
+ul > li:before {
+	content: "- ";
+}
+
+
+/* FORMS */
+
+input, button {
+	font-size:1.1em;
+	margin: 10px 10px 5px 10px;
+	margin:5px;
+	padding:5px;
+	border:1px solid black;
+}
+
+input[type=email] {
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	border-radius: 0;
+}
+
+input[type=submit], button {
+	appearance:button;
+	-webkit-appearance:button;
+	-moz-appearance:button; 
+	display:inline-block;
+	color:white;
+	background-color:#3498db;
+	border-radius:5px;
+	border:0px;
+	padding:5px 14px;
+    cursor: pointer;
+    cursor: hand;
+	text-decoration: none;
+	margin:5px;
+}
+
+input[type=submit]:hover, button:hover {
+	background-color:#2980b9;
+}
+
+/* OTHER */ 
+
+pre {
+	font-size:1.1em;
+	margin: 10px 0;
+}
+
+.top {
+	padding-top:10px; 
+	margin-top:0;
+}
+
+body.game {
+	margin-top:20px;
+	max-width:1000px;
+}
+
+.game p {
+	max-width:600px;
+	text-align: center;
+	margin:auto;
+	margin-top: 20px;
+}
+
+.game div {
+	margin: auto;
+}
+
+.game .box {
+	max-width:600px;
+	margin-top: 20px;
+	border:1px solid black;
+	padding: 10px;
+	background: white;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.game .box2 {
+	text-align: center;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+.game h1 {
+	margin-bottom:20px;
+	text-align: center;
+}
+
+.onegame {
+	text-align: center;
+	margin-bottom:15px;
+}
+
+#meta {
+	display:none;
+}
+
+ul.share-buttons {
+  padding: 0;
+  overflow: auto;
+  width:226px;
+  margin:auto;
+}
+
+ul.share-buttons li {
+	float:left;
+	width:25px;
+	margin:10px;
+	margin-bottom:0;
+}
+
+ul.share-buttons > li:before {
+	content: "";
+}
+
+/* RESPONSIVE */
+
+.showMobile {
+	display: none;
+}
+
+.showDesktop {
+	display:initial;
+}
+
+@media only screen and (max-width: 560px) {
+	.showMobile {
+		display: initial;
+	}
+
+	.showDesktop {
+		display:none;
+	}
+
+	.nav span {
+		display:none;
+	}
+
+	.nav {
+		margin-top:0;
+	}
+
+	.nav a {
+		margin-left: 10px;
+	}
+
+	body.game {
+		margin-top:5px;
+	}
+
+	.hideMobile {
+		display: none;
+	}
+
+	#popup {
+		width:100% !important;
+		bottom:0 !important;
+		right:0 !important;
+		min-width:350px;
+		border-radius: 0 !important;
+	}
+
+	.cta br {
+		display: none;
+	}
+}
+
+/* POPUP */
+
+#popup {
+	width:300px;
+	border:3px solid #3498db;
+	border-radius: 15px;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	background: white;
+	padding:10px;
+	visibility: hidden;
+	text-align: center;
+}
+
+#popup span {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+@-webkit-keyframes slideOutDown {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 120%, 0);
+    transform: translate3d(0, 120%, 0);
+  }
+}
+
+@keyframes slideOutDown {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 120%, 0);
+    transform: translate3d(0, 120%, 0);
+  }
+}
+
+.slideOutDown {
+  -webkit-animation-name: slideOutDown;
+  animation-name: slideOutDown;
+}
